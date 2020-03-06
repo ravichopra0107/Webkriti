@@ -2,6 +2,8 @@ body{
     height: 100%;
     background-image: url("images/background.png");
     padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .orbit {
     border-radius: 50%;
