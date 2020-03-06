@@ -1,10 +1,9 @@
 body{
     height: 100%;
+    background-image: url("images/background.png");
+    padding: 0;
 }
-btn{
-    border:3px solid blue;
-    cursor: pointer;
-}
+
 .orbit {
     border-radius: 50%;
     background-color: transparent;
@@ -18,8 +17,8 @@ btn{
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid black;
-    height: 19vh;
-    width: 10.21vw;
+    height: 18vh;
+    width: 9.625vw;
     display: inline-block;
     position: relative;
     text-align: center;
@@ -32,35 +31,91 @@ btn{
         transform: rotate(360deg);
     }
 } */
-.orbit:nth-child(1)
+
+
+
+
+
+
+
+
+.orbit:nth-child(2)
 {
-    height: 43vh;
-    width: 23.11vw;
+    height: 44vh;
+    width: 23.52vw;
     left:40.8vw;;
     top:25vh;
 }
-.orbit:nth-child(2)
+.orbit:nth-child(3)
 {
     height: 86vh;
     width: 45vw;
     left: 30vw;
     top:4.5vh;
 }
-.orbit:nth-child(3)
+.orbit:nth-child(4)
 {
     height: 28vh;
     width: 15.05vw;
-    left:44.4vw;
-    top:32.35vh;
-    visibility: hidden;
-}
-.orbit:nth-child(1) .e:nth-child(1){
-    bottom:8.5vh;
+    left:44.9vw;
+    top:32.4vh;
+    border:none;
 }
 .orbit:nth-child(2) .e:nth-child(1){
+    bottom:11.2vh;
+}
+.orbit:nth-child(3) .e:nth-child(1){
     left:19vw;
     top:18vh;
+    border: none;
 }
+
+
+
+
+
+
+.nucleus_circle img{
+    background-image: inherit; 
+    height:90%; 
+    margin-top: 5px;
+}
+.logo{
+    position: absolute;
+    background-image: inherit;
+    top:0px;
+    left:0px;
+    width: 300px;
+    margin: 0;
+    border: none;
+    z-index: 20;
+}
+.btn_register{
+    cursor: pointer;
+    background-image: inherit;
+    color: rgb(248, 158, 167);
+    position: relative;
+    top:33px;
+    left:15px;
+    font-size:large;
+    font-weight: bold;
+    font-family: 'Arvo', serif;
+}
+.btn_register:active{
+    font-size: xx-large;
+    top:28px;
+    color:rgba(248,158,167,0.5);
+}
+.btn_register:hover{
+    font-size: xx-large;
+    top:28px;
+}
+.btn_logo{
+    cursor: pointer;
+}
+
+
+
 
 
 
