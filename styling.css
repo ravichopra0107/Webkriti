@@ -18,8 +18,8 @@ btn{
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid black;
-    height: 100px;
-    width: 100px;
+    height: 19vh;
+    width: 19vh;
     display: inline-block;
     position: relative;
     text-align: center;
@@ -34,31 +34,31 @@ btn{
 } */
 .orbit:nth-child(1)
 {
-    height: 500px;
-    width: 500px;
-    top:55px;
-    left:400px;
+    height: 43vh;
+    width: 43vh;
+    left:40.8vw;;
+    top:25vh;
 }
 .orbit:nth-child(2)
 {
-    height: 350px;
-    width: 350px;
-    top:130px;
-    left:475px;
+    height: 86vh;
+    width: 86vh;
+    left: 30vw;
+    top:4.5vh;
 }
 .orbit:nth-child(3)
 {
-    height: 200px;
-    width: 200px;
-    top:205px;
-    left:550px;
+    height: 28vh;
+    width: 28vh;
+    left:44.4vw;
+    top:32.35vh;
 }
 .orbit:nth-child(1) .e:nth-child(1){
-    bottom: 39px;
+    bottom:8.5vh;
 }
 .orbit:nth-child(2) .e:nth-child(1){
-    left:150px;
-    top:37px;
+    left:19vw;
+    top:18vh;
 }
 
 
@@ -73,7 +73,7 @@ btn{
 .register{
     border:5px solid black;
     background-color: yellow;
-    display: block;
+    /* display: none; */
     /*to be changed*/
     margin: auto;
     height: 95vh;
