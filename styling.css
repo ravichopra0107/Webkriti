@@ -72,6 +72,12 @@ body{
     background-image: inherit; 
     height:90%; 
     margin-top: 5px;
+    /* display: none; */
+    /*to be changed*/
+}
+.nucleus_circle img:hover{
+    transform: rotate(360deg) scale(1.2,1.2);
+    transition: transform 1s;
 }
 .logo{
     position: relative;
@@ -213,6 +219,9 @@ input[type="submit"]{
     margin:4vh;
     left:40.8vw;
 } 
+input[type="submit"]:hover{
+    box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
+}
 .forgot_password{
     cursor: pointer;
 }
@@ -229,6 +238,9 @@ input[type="submit"]{
     padding: 1.5px 14px;
     border-radius: 5px;
     height: 1px;
+}
+.register a[href="#first_time_register"]:hover{
+    box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
 }
 img[src="images/headers.png"]{
     position: absolute;
@@ -253,7 +265,44 @@ img[src="images/headers.png"]{
     height:9vh;
     margin: 5px;
     outline: none;
+    /* display: none; */
+    /*to be changed */
 }
 .social_media a:active,a:hover{
     outline: none;
 }
+#contact{
+        border:3px solid #ff00c8;
+        border-radius:10% ;
+        /*to be changed*/
+        display: none;
+        margin:5vh auto;
+        height: 90vh;
+        width: 90vw;
+        /*to be changed*/
+        opacity: 1;
+        z-index:19;
+        background-image: url("images/register.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+#contact h2{
+    color: #ffffdd;
+    z-index:19; 
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+#contact ul{
+    margin-left:18vh;
+}
+video{
+    width: 60vw;
+    position: absolute;
+    top:13vh;
+    left:22.5vw;
+    z-index:16;
+    opacity:1;/*to be changed*/
+    /* display: none; */
+}
+
