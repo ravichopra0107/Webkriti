@@ -62,3 +62,10 @@ function expand()
   o.style.opacity=cnt;
 }
 }
+p.addEventListener("mouseover",()=>{
+  setTimeout(()=>{document.querySelector("video").style.display="inline-block";
+document.querySelector("video").play();},1005);
+  setTimeout(()=>{
+    document.querySelector("video").style.display="none";
+  },9200);
+});
