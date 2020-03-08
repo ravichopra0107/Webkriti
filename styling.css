@@ -28,7 +28,7 @@ body{
 {
     height: 44vh;
     width: 23.52vw;
-    left:40.8vw;;
+    left:40.8vw;
     top:25vh;
 }
 .orbit:nth-child(3)
@@ -230,11 +230,10 @@ input[type="submit"]{
     border-radius: 5px;
     height: 1px;
 }
-img[src="images/logo4.jpg"]{
+img[src="images/headers.png"]{
     position: absolute;
     height: 15vh;
     padding: 5px;
-    border-radius: 100%;
     top: 9.5vh;
     left: 6.5vw;
 }
@@ -244,4 +243,17 @@ img[src="images/logo4.jpg"]{
 }
 #email:focus,#password:focus{
     border-bottom:2.5px solid #e9e956;
+}
+.social_media{
+    position: relative;
+    top:80vh;
+    right:42vw;
+}
+.social_media img{
+    height:9vh;
+    margin: 5px;
+    outline: none;
+}
+.social_media a:active,a:hover{
+    outline: none;
 }
