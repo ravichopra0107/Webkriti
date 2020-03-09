@@ -37,3 +37,35 @@ function full2()
     i1++;
     j1++;
 }
+var cnt=0,u;
+var o=document.querySelector(".register");
+var p=document.querySelector(".orbit.nucleus_circle")
+z[2].addEventListener("click",()=>{
+  for(var i=0;i<4;i++)
+  {
+    z[i].style.display='none';
+  }
+  document.querySelector(".orbit").style.display="none";
+  p.style.display="none";
+u=setInterval(expand,50);
+  o.style.display="block";
+});
+function expand()
+{
+  if(cnt===90)
+  {
+  clearInterval(u);
+  cnt=0;
+  }
+  else{
+    cnt+=.01;
+  o.style.opacity=cnt;
+}
+}
+p.addEventListener("mouseover",()=>{
+  setTimeout(()=>{document.querySelector("video").style.display="inline-block";
+document.querySelector("video").play();},1005);
+  setTimeout(()=>{
+    document.querySelector("video").style.display="none";
+  },9200);
+});
