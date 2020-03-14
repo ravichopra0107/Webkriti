@@ -62,10 +62,23 @@ function expand()
   o.style.opacity=cnt;
 }
 }
-p.addEventListener("mouseover",()=>{
-  setTimeout(()=>{document.querySelector("video").style.display="inline-block";
-document.querySelector("video").play();},1005);
+p.addEventListener("onload",()=>{
+  document.querySelector("video").style.display="inline-block";
+document.querySelector("video").play();};                 
+  for(var i=0;i<4;i++)
+  {
+    z[i].style.display='none';
+  }
+  document.querySelector(".orbit").style.display="none";
+  p.style.display="none";
   setTimeout(()=>{
     document.querySelector("video").style.display="none";
-  },9200);
+    
+  for(var i=0;i<4;i++)
+  {
+    z[i].style.display='inline-block';
+  }
+  document.querySelector(".orbit").style.display="inline-block";
+  p.style.display="none";
+  },10000);
 });
