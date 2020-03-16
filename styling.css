@@ -9,7 +9,7 @@ body{
     border-radius: 50%;
     background-color: transparent;
     text-align: center;
-    display: none;
+    display: inline-block;
     position: absolute;
     opacity: 1;/*to be changed*/
 }
