@@ -4,36 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling.css">
-    <title>Document</title>
+    <link rel="icon" href="images/nucleus.ico">
+    <title>Infotsav</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <!--outer orbit-->
+    <!--logo top-left-->
     <div class="orbit">
-        <div class="e"></div>
+        <img class="logo" src="images/name.png">
     </div>
     <!--inner orbit-->
     <div class="orbit">
+        <div class="e">
+            <btn onclick="" class="btn_events">EVENTS</btn>
+        </div>
+        <div class="e">
+            <btn onclick="" class="btn_contact">CONTACT US</btn>
+        </div>
+    </div>
+    <!--outer orbit-->
+    <div class="orbit">
         <!--for register-->
         <div class="e">
-            <btn onclick="">register/login</btn>
+            <!--script to open reqquired div-->
+            <btn onclick="" class="btn_register">REGISTER<br>LOGIN</btn>
+        </div>
+        <div class="e">
+            <btn onclick="" class="btn_dashboard">DASHBOARD</btn>
         </div>
     </div>
     <div class="orbit nucleus_circle">
+     <btn onclick="" class="btn_about"><img src="images/nucleus.png"></btn>
     </div>
-    
-
-
-    <div class="register">
-        <!--to be filled-->
-       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus leo auctor, gravida mi sit amet, dignissim lacus. Phasellus finibus, lectus id dapibus vehicula, diam sapien pellentesque neque, a interdum arcu enim sed urna. Aliquam risus risus, aliquam ac lectus in, feugiat feugiat elit. Praesent sodales ultricies tortor, in mattis purus posuere vitae. Vestibulum varius purus et ligula tempor, id rhoncus nisi eleifend. Nam vulputate consequat ipsum vitae hendrerit. In hac habitasse platea dictumst.
-
-Vivamus feugiat mi sit amet vehicula venenatis. Donec viverra dui dui, sit amet dapibus libero egestas nec. Pellentesque ac venenatis nisi, id tincidunt lectus. Suspendisse mollis at ante et facilisis. Nunc eget enim rhoncus, dignissim diam et, commodo urna. Aliquam lacinia sapien sed mi aliquet, sed blandit lacus placerat. Vestibulum mollis, ligula vitae suscipit malesuada, quam nisi tempus justo, laoreet lacinia urna ligula vitae enim. Nulla laoreet metus at elit condimentum accumsan. Sed vel libero non neque dignissim semper. Proin dolor lorem, rhoncus eu faucibus a, efficitur non augue. Aenean condimentum aliquam turpis vel efficitur. Aliquam condimentum non libero sed rutrum. Morbi vel purus accumsan, dictum sapien in, tristique dui. Sed vulputate consequat nisl, non aliquam odio volutpat sed. Pellentesque efficitur odio quis libero pretium, a dapibus justo sodales.
-
-Suspendisse vitae accumsan orci, eu vestibulum justo. Donec sit amet consectetur nisi. Duis pharetra, velit vitae viverra sodales, neque leo euismod ipsum, at vulputate enim odio eget sem. Integer nec felis id diam vehicula consectetur. Nam ac est urna. Vestibulum faucibus libero quis purus tempor, non vulputate eros ullamcorper. In vel interdum libero. Nunc gravida eros non tortor venenatis rhoncus. Morbi sed risus molestie, ornare augue sed, lacinia purus. Proin in mi pulvinar, elementum arcu sit amet, tempor velit.
-
-Donec imperdiet eleifend nibh, a maximus mi congue at. Phasellus lacinia in erat a imperdiet. Quisque et efficitur ante, quis molestie nisi. Donec sit amet lacus elementum, fermentum magna vel, semper quam. Mauris aliquet in ligula volutpat vulputate. Pellentesque ut lobortis odio. Pellentesque non condimentum enim. Donec tempus felis eu sapien efficitur, et aliquam odio bibendum. In eu arcu in enim eleifend maximus. In vel velit eu lectus egestas vehicula in vel arcu. Fusce maximus turpis dui, ut mattis massa posuere quis. Etiam ullamcorper aliquet diam eu commodo. Donec maximus et odio et ornare. Vestibulum quis sem viverra, fringilla ligula non, tristique nulla. Nam congue diam in lorem mollis, vel dignissim massa ultrices.
-
-Aenean eget velit posuere, egestas ex nec, faucibus sem. Vivamus porttitor mauris a lectus varius laoreet. Etiam sit amet interdum lorem. Pellentesque rhoncus tincidunt dolor ac imperdiet. Vivamus risus orci, lacinia eget vestibulum quis, posuere a mi. Donec vulputate risus laoreet urna porttitor, ac porttitor turpis lobortis. Donec tincidunt facilisis nunc non laoreet. Aliquam egestas faucibus felis placerat ullamcorper. In hac habitasse platea dictumst. Fusce iaculis orci vel tristique commodo. Donec feugiat ipsum sed libero auctor, a iaculis elit iaculis. Nunc congue elit rutrum, mollis dolor nec, suscipit tortor.</p>
+    <video id="vid" autoplay preload="none" muted><source  src="videos/y2mate.com - Infotsav'16 Teaser_1s18k68dzgg_1080p (online-video-cutter.com).mp4" type="video/mp4"></video>
+        <div class="register">
+        <!--script to go to homepage-->
+        <btn onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
+             <h1>LOGIN</h1>
+                <form action="" method="POST">
+                    <p>E-mail</p>
+                    <input type="email" name="email" id="email" autofocus></input><br>
+                    <p>Password</p>
+                    <input type="password" name="password" id="password"></input><br>
+                    <input type="submit" name="submit" id="submit" value="Submit" style="position: relative; left:41.5vw; padding: 3px 14px; border-radius: 5px;"></input>
+                </form>
+                <a href="#forgot_password">Forgot Password?</a>
+                <p style="left:41vw;">Not yet registered?</p>
+                <a href="#first_time_register">Register</a>
     </div>
+    <ul class="social_media">
+    <a href="https://www.instagram.com/infotsav19/?hl=en" target="_blank"><img src="images/instaff.png"></a>
+    <a href="https://www.facebook.com/Infotsav/" target="_blank"><img src="images/fb.png"></a>
+    <a href="https://www.youtube.com/channel/UC9t8LEKnMKxGB_s7Qal9uJg" target="_blank"><img src="images/youtube-s.png"></a>
+    </ul>
+    <div id="contact">
+        <!--script to go to homepage-->
+        <btn onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
+        <div id="contact_us">
+            <ul>
+                <h2>Aditya</h2>
+                <h2>Kavish Dadhich</h2>
+                <h2>Ravi Chopra</h2>
+            </ul>
+        </div>
+    </div>
+    <script src="action.js"></script>
 </body>
 </html>
