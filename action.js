@@ -58,21 +58,22 @@ function expand()
   cnt=0;
   }
   else{
-    cnt+=.01;
+    cnt+=.05;
   o.style.opacity=cnt;
 }
 }
 window.addEventListener("load",playvid);
 function playvid()
 {
-   document.querySelector("#vid").style.display="inline-block";
-document.querySelector("video").play();                 
   for(var i=0;i<4;i++)
   {
     z[i].style.display='none';
   }
+   document.querySelector("video").style.display="inline-block";
+
+   document.querySelector("video").play();                 
   setTimeout(()=>{
-    document.querySelector("#vid").style.display="none";
+    document.querySelector("video").style.display="none";
   for(var i=0;i<4;i++)
   {
     z[i].style.display='inline-block';
