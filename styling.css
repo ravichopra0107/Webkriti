@@ -1,4 +1,3 @@
-
 body{
     height: 100%;
     background-image: url("images/background.png");
@@ -196,7 +195,7 @@ body{
     height: 90vh;
     width: 90vw;
     /*to be changed*/
-    opacity: 0;
+    opacity: 1;
     z-index:19;
     background-image: url("images/register.jpg");
     background-repeat: no-repeat;
@@ -220,15 +219,6 @@ body{
 }
 .register h1{
     font-size:xxx-large;
-}
-input[type="submit"]{
-    cursor: pointer;
-    color:black;
-    margin:4vh;
-    left:40.8vw;
-} 
-input[type="submit"]:hover{
-    box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
 }
 .forgot_password{
     cursor: pointer;
@@ -257,12 +247,15 @@ img[src="images/headers.png"]{
     top: 9.5vh;
     left: 6.5vw;
 }
-#email,#password,#name,#email_add,#subject,#message{
+#email,#password,#name,#email_add,#subject,#message,#name2,#phone,#college,#city,#email2,#password2{
     border-bottom:1px solid #ffffdd; 
     background-color: transparent;
     width: 22vw;
+    margin-bottom: 2vh;
+    font-size:1.1em;
 }
-#email:focus,#password:focus,#name:focus,#email_add:focus,#subject:focus{
+#email:focus,#password:focus,#name:focus,#email_add:focus,#subject:focus,#message:focus,#name2:focus,#phone:focus
+,#college:focus,#city:focus,#email2:focus,#password2:focus{
     border-bottom:2.5px solid #e9e956;
 }
 #contact form{
@@ -364,5 +357,58 @@ video{
     left:22.5vw;
     z-index:16;
     opacity:1;/*to be changed*/
-    display: none !important;
+    display: none;
+}
+#login,#nyr,a[href="#first_time_register"],a[href="#forgot_password"]{
+    /*to be changed*/
+    /* display: none; */
+}
+#first_time_register{
+    position: relative;
+    right:2.5vw;
+}
+.first_time_register1{
+    /*to be changed*/
+    display: none;
+    opacity: 1;
+}
+.first_time_register2{
+    /*to be changed*/
+    display: none;
+    opacity: 1;
+    position: relative;
+    bottom:5vh;
+}
+select{
+    position: relative;
+    left:37.5vw;
+    top:7vh;
+    width:20vw;
+}
+.first_time_register1 button{
+    position: relative;
+    left:45vw;
+    top:10vh;
+    cursor: pointer;
+}
+.first_time_register1 button:hover{
+    box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
+}
+#first_time_register h1{
+    left:40vw;
+}
+input[type="submit"]{
+    cursor: pointer;
+    color:black;
+    margin:4vh;
+    left:40.8vw;
+    padding:0.5vh 1vw;
+    border-radius: 5px;
+} 
+input[type="submit"]:hover{
+    box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
+}
+input[name="register"]
+{
+    left:43vw;
 }
