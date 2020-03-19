@@ -37,21 +37,55 @@
     <div class="orbit nucleus_circle">
      <btn onclick="" class="btn_about"><img src="images/nucleus.png"></btn>
     </div>
-    <video autoplay preload="none" muted><source id="vid" src="videos/y2mate.com - Infotsav'16 Teaser_1s18k68dzgg_1080p (online-video-cutter.com).mp4" type="video/mp4"></video>
-        <div class="register">
+    <video autoplay muted><source id="vid" src="videos/y2mate.com - Infotsav'16 Teaser_1s18k68dzgg_1080p (online-video-cutter.com).mp4" type="video/mp4"></video>
+    <div class="register">
         <!--script to go to homepage-->
         <btn onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
-             <h1>LOGIN</h1>
-                <form action="" method="POST">
+                <form id="login" action="" method="POST">
+                    <h1>LOGIN</h1>
                     <p>E-mail</p>
-                    <input type="email" name="email" id="email" autofocus></input><br>
+                    <input type="email" name="email" id="email" autofocus style="width:19vw;"></input><br>
                     <p>Password</p>
-                    <input type="password" name="password" id="password"></input><br>
+                    <input type="password" name="password" id="password" style="width: 19vw;"></input><br>
                     <input type="submit" name="submit" id="submit" value="Submit" style="position: relative; left:41.5vw; padding: 3px 14px; border-radius: 5px;"></input>
                 </form>
                 <a href="#forgot_password">Forgot Password?</a>
-                <p style="left:41vw;">Not yet registered?</p>
+                <p id="nyr" style="left:41vw;">Not yet registered?</p>
                 <a href="#first_time_register">Register</a>
+        <form id="first_time_register" action="" method="POST">
+            <div class="first_time_register1">
+            <h1>REGISTER</h1>
+            <p>Name</p>
+            <input type="text" name="name2" id="name2" autofocus></input><br>
+            <p>Phone Number</p>
+            <input type="tel" name="phone" id="phone"></input><br>
+            <p>Gender</p>
+            <select id="gender" form="first_time_register" name="gender">
+                <option value="male"><p>Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+            <br>
+            <p style="top:8vh; left:42vw;">Already registered?</p><br>
+            <!--script to go to login div-->
+            <button onclick="" style="left:44vw; top:6vh;">Login</button><br>
+            <!--script to go to the second part-->
+            <button onclick="" style="left:44.2vw; top:10vh;">Next</button>
+            </div>
+            <div class="first_time_register2">
+            <h1>REGISTER</h1>
+            <p>College/Organisation</p>
+            <!--script to autofocus at college-->
+            <input type="text" name="college" id="college" autofocus></input><br>
+            <p>City</p>
+            <input type="text" name="city" id="city"></input><br>
+            <p>E-mail</p>
+            <input type="email" name="email2" id="email2"></input><br>
+            <p>Password</p>
+            <input type="password" name="password2" id="password2"></input><br>
+            <input type="submit" name="register" id="register" value="Register"></input>
+            </div>
+        </form>
     </div>
     <ul class="social_media">
     <a href="https://www.instagram.com/infotsav19/?hl=en" target="_blank"><img src="images/instaff.png"></a>
