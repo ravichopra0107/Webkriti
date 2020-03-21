@@ -92,6 +92,7 @@ for(var i=0;i<4;i++)
 }
 document.querySelector(".orbit").style.display="none";
 p.style.display="none";
+document.querySelector(".social_media").style.display="none";
 cont.style.display="block";
 u=setInterval(expand2,60);
 });
