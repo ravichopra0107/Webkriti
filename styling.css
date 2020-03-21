@@ -195,7 +195,7 @@ body{
     height: 90vh;
     width: 90vw;
     /*to be changed*/
-    opacity: 1;
+    opacity: 0;
     z-index:19;
     background-image: url("images/register.jpg");
     background-repeat: no-repeat;
@@ -247,14 +247,14 @@ img[src="images/headers.png"]{
     top: 9.5vh;
     left: 6.5vw;
 }
-#email,#password,#name,#email_add,#subject,#message,#name2,#phone,#college,#city,#email2,#password2{
+#email,#password,#name,#email_add,#subject,#message,#name2,#phone,#college,#city,#email2,#password2,#email3{
     border-bottom:1px solid #ffffdd; 
     background-color: transparent;
     width: 22vw;
     margin-bottom: 2vh;
     font-size:1.1em;
 }
-#email:focus,#password:focus,#name:focus,#email_add:focus,#subject:focus,#message:focus,#name2:focus,#phone:focus
+#email:focus,#email3:focus,#password:focus,#name:focus,#email_add:focus,#subject:focus,#message:focus,#name2:focus,#phone:focus
 ,#college:focus,#city:focus,#email2:focus,#password2:focus{
     border-bottom:2.5px solid #e9e956;
 }
@@ -303,7 +303,7 @@ img[src="images/headers.png"]{
         height: 90vh;
         width: 90vw;
         /*to be changed*/
-        opacity: 1;
+        opacity: 0;
         z-index:19;
         background-image: url("images/register.jpg");
         background-repeat: no-repeat;
@@ -411,4 +411,41 @@ input[type="submit"]:hover{
 input[name="register"]
 {
     left:43vw;
+}
+#forgot_password h1{
+    font-size: xxx-large;
+    position: relative;
+    left:29vw;
+    top: -1vh;
+}
+#forgot_password{
+    position: relative;
+    top:15vh;
+    /*to be changed*/
+    display: none;
+    opacity: 1;
+}
+#forgot_password p, #email3{
+    position: relative;
+    left: 35vw;
+}
+.solution{
+    /*to be changed*/
+    display: none;
+    opacity: 1;
+    width:30vw;
+    text-align: center;
+    font-size: x-large;
+    position: relative;
+    top:24vh;
+    right:6.5vw;
+}
+.solution a p{
+    position: relative;
+    left:-3.8vw;    
+    color:#e9e956;
+}
+.solution a p:hover, .solution a p:active{
+    color: #ffff00;
+    cursor: pointer;
 }
