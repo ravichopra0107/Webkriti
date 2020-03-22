@@ -11,7 +11,7 @@ body{
     text-align: center;
     display: inline-block;
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     /*to be changed*/
 }
 .e {
@@ -23,7 +23,7 @@ body{
     display: inline-block;
     position: relative;
     text-align: center;
-    opacity: 1;
+    opacity: 0;
     /*to be changed*/
 }
 .orbit:nth-child(2)
@@ -74,7 +74,7 @@ body{
     background-image: inherit; 
     height:90%; 
     margin-top: 5px;
-    /* display: none; */
+    display: none;
     /*to be changed*/
 }
 .nucleus_circle img:hover{
@@ -220,7 +220,7 @@ body{
 .register h1{
     font-size:xxx-large;
 }
-.forgot_password{
+#forgot_password{
     cursor: pointer;
 }
 .register a,input,p{
@@ -270,7 +270,7 @@ img[src="images/headers.png"]{
     background-color: transparent;
     border-radius: 12%;
     top:5vh;
-    height: 15vh;
+    height: 10vh;
     width:30vw;
     padding: 10px;
     color: #ffffdd;
@@ -288,7 +288,7 @@ img[src="images/headers.png"]{
     height:9vh;
     margin: 5px;
     outline: none;
-    /* display: none; */
+    display: none;
     /*to be changed */
 }
 .social_media a:active,a:hover{
@@ -298,12 +298,12 @@ img[src="images/headers.png"]{
         border:3px solid #ff00c8;
         border-radius:10% ;
         /*to be changed*/
-        display: none;
+        /* display: none; */
         margin:5vh auto;
         height: 90vh;
         width: 90vw;
         /*to be changed*/
-        opacity: 0;
+        opacity: 1;
         z-index:19;
         background-image: url("images/register.jpg");
         background-repeat: no-repeat;
@@ -359,7 +359,7 @@ video{
     opacity:1;/*to be changed*/
     display: none;
 }
-#login,#nyr,a[href="#first_time_register"],a[href="#forgot_password"]{
+#login,#nyr,.first,.forgot{
     /*to be changed*/
     /* display: none; */
 }
@@ -397,7 +397,7 @@ select{
 #first_time_register h1{
     left:40vw;
 }
-input[type="submit"]{
+input[type="submit"],.first{
     cursor: pointer;
     color:black;
     margin:4vh;
@@ -405,7 +405,7 @@ input[type="submit"]{
     padding:0.5vh 1vw;
     border-radius: 5px;
 } 
-input[type="submit"]:hover{
+input[type="submit"]:hover,.first:hover{
     box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
 }
 input[name="register"]
@@ -447,5 +447,21 @@ input[name="register"]
 }
 .solution a p:hover, .solution a p:active{
     color: #ffff00;
+    cursor: pointer;
+}
+.first,.forgot{
+    margin: 0;
+    position: relative;
+    z-index: inherit;
+}
+.first{
+    left:43vw;
+    top:7vh;
+}
+.forgot{
+    left:3.8vw;
+    bottom:2vh;
+}
+.forgot:hover{
     cursor: pointer;
 }
