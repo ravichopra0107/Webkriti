@@ -11,7 +11,7 @@ body{
     text-align: center;
     display: inline-block;
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     /*to be changed*/
 }
 .e {
@@ -23,7 +23,7 @@ body{
     display: inline-block;
     position: relative;
     text-align: center;
-    opacity: 0;
+    opacity: 1;
     /*to be changed*/
 }
 .orbit:nth-child(2)
@@ -74,7 +74,7 @@ body{
     background-image: inherit; 
     height:90%; 
     margin-top: 5px;
-    display: none;
+    display: inline-block;
     /*to be changed*/
 }
 .nucleus_circle img:hover{
@@ -288,7 +288,7 @@ img[src="images/headers.png"]{
     height:9vh;
     margin: 5px;
     outline: none;
-    display: none;
+    display: inline-block;
     /*to be changed */
 }
 .social_media a:active,a:hover{
@@ -298,6 +298,7 @@ img[src="images/headers.png"]{
         border:3px solid #ff00c8;
         border-radius:10% ;
         /*to be changed*/
+        display:none;
         /* display: none; */
         margin:5vh auto;
         height: 90vh;
@@ -370,12 +371,12 @@ video{
 .first_time_register1{
     /*to be changed*/
     display: none;
-    opacity: 1;
+    opacity: 0;
 }
 .first_time_register2{
     /*to be changed*/
     display: none;
-    opacity: 1;
+    opacity: 0;
     position: relative;
     bottom:5vh;
 }
@@ -423,7 +424,7 @@ input[name="register"]
     top:15vh;
     /*to be changed*/
     display: none;
-    opacity: 1;
+    opacity: 0;
 }
 #forgot_password p, #email3{
     position: relative;
