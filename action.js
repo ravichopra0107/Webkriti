@@ -108,4 +108,47 @@ function expand2()
     cont.style.opacity=cnt;
 }
 }
-
+document.querySelector(".forgot").addEventListener("click",()=>{
+  document.querySelector(".reg1").style.display="none"; 
+  u=setInterval(expand3,60);
+  function expand3()
+  {
+    if(cnt===90)
+    {
+    clearInterval(u);
+    cnt=0;
+    }
+    else{
+      cnt+=.05;
+      document.querySelector("#forgot_password").style.opacity=cnt;
+  } 
+}
+ document.querySelector("#forgot_password").style.display="block";
+})
+// document.querySelector("#submit3").addEventListener("click",()=>{
+//   document.querySelector("#forgot_password").style.display="none";
+//   document.querySelector("#submit3").style.display="block";
+// })
+document.querySelector(".first").addEventListener("click",()=>{
+  document.querySelector("#first_time_register").style.display="block";
+  document.querySelector(".reg1").style.display="none";
+  u=setInterval(expand4,60); 
+  function expand4()
+  {
+    if(cnt===90)
+    {
+    clearInterval(u);
+    cnt=0;
+    }
+    else{
+      cnt+=.05;
+      document.querySelector(".first_time_register1").style.opacity=cnt;
+  } 
+}
+  document.querySelector(".first_time_register1").style.display="block";
+}
+)
+document.querySelector(".next1").addEventListener("click",()=>{
+  document.querySelector(".first_time_register1").style.display="none";
+  document.querySelector(".first_time_register2").style.display="block";
+})
