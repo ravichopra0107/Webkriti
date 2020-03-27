@@ -1,3 +1,6 @@
+html{
+    height:100%;
+}
 body{
     height: 100%;
     background-image: url("images/background.png");
@@ -75,7 +78,6 @@ body{
     height:90%; 
     margin-top: 5px;
     display: inline-block;
-    /*to be changed*/
 }
 .nucleus_circle img:hover{
     transform: rotate(360deg) scale(1.2,1.2);
@@ -289,7 +291,7 @@ img[src="images/headers.png"]{
     margin: 5px;
     outline: none;
     display: inline-block;
-    /*to be changed */
+    /*to be changed back to inline-block*/
 }
 .social_media a:active,a:hover{
     outline: none;
@@ -465,4 +467,246 @@ input[name="register"]
 }
 .forgot:hover{
     cursor: pointer;
+}
+.Events{
+    /*to be changed*/
+    display: none;
+    background:none;
+    height: 100%;
+}
+.event1,.event2,.event3{
+    border:3px solid #ff00c8;
+    border-radius:10% ;
+    margin:10vh auto;
+    height: 77vh;
+    width:80vw;
+    background-color: black;
+    overflow: hidden;
+}
+.event1{
+    opacity:1;
+    /*to be changed*/
+    z-index:19;
+    display: none;
+    /* to be changed */
+    /*z-index which are not visible is 19*/
+}
+.event2{
+    opacity:1;
+    /*to be changed*/
+    position: absolute;
+    top: 0;
+    left:10vw;
+    z-index:20;
+    display: none;
+    /* to be changed */
+    /*z-index which are not visible is 19*/
+}
+.event3{
+    opacity:1;
+    /*to be changed*/
+    position: absolute;
+    top: 0;
+    left:10vw;
+    z-index:19;
+    /*z-index which are not visible is 19*/
+    /* display: none; */
+    /*to be changed*/
+}
+.eve_logo{
+    position: absolute;
+    z-index: 21;
+    top:-6vh;
+    left:-5vw;
+}
+.arrow1 img{
+    height:8vh;
+    width: 5vw;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    left:43vw;
+    bottom: 2vh;
+}
+.arrow1 img:hover,.arrow1 img:active{
+    height:10vh;
+    width:7vw;
+}
+.arrow2 img{
+    height:8vh;
+    width: 5vw;
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    left:55vw;
+    bottom: 2vh;
+}
+.arrow2 img:hover,.arrow2 img:active{
+    height:10vh;
+    width:7vw;
+}
+.event1 h1,.event2 h1, .event3 h1{
+    color: #b30c0c;
+    font-family: 'Arvo', sans-serif;
+    font-size: 8vh;
+    font-weight: bold;
+    margin-left: 8vw;
+    margin-top: 15vh;
+    /*to be changed*/
+    z-index:20;
+    /*z-index which are not visible is 19*/
+}
+.event1 h1::first-letter, .event2 h1::first-letter,  .event3 h1::first-letter{
+    font-size: 15vh;
+}
+.event1 button, .event2 button,  .event3 button{
+    background-color: #b41515;
+    border: none;
+    font-size: 4vh;
+    padding: 2vh;
+    border-radius: 5%;
+    margin-left: 8vw;
+    color: #ffffbb;
+    cursor: pointer;
+    outline: none;
+    /*to be changed*/
+    z-index:20;
+    /*z-index which are not visible is 19*/
+}
+.event1 img, .event2 img,  .event3 img{
+    float: right;
+    position: relative;
+    width: 50vw;
+    height: 90vh;
+    bottom: 45vh;
+    left:10vw;
+    transform: skew(-15deg);
+}
+.event1 button:hover,.event1 button:active, .event2 button:hover,.event2 button:active,  .event3 button:hover,.event3 button:active{
+    transform: skewX(-20deg);
+    transition-duration: 0.5s;
+    font-size: 6vh;
+    outline: none;
+}
+.event2 img{
+    bottom: 50vh;
+}
+.event2 h1{
+    color:#56cce9;
+}
+.event2 button{
+    background-color: #56cce9;
+    color:#000000;
+}
+.event3 h1{
+    color: #69b314;
+}
+.event3 button{
+    background-color: #69b314;
+    color: #000000;
+}
+.part1{
+    display: none;
+    opacity: 0;
+    /*to be changed*/
+}
+.explore{
+    /* display: none; */
+    opacity: 1;
+    color: white;
+    text-align: center;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.explore h2{
+    font-family: 'Arvo', sans-serif;
+    font-weight: bold;
+}
+.explore btn{
+    color: #ffffdd;
+    z-index:19; 
+    font-family: 'Arvo', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    display: inline-block;
+    width:22vw;
+    margin-left:-5px ;
+    border-bottom: 2px solid white;
+    cursor: default;
+    padding: 1vh 0;
+}
+.explore btn:active{
+    border-bottom:4px solid rgb(65, 227, 255);
+    border-radius:10% 10% 2% 2%;
+    background-color: #333131;
+}
+.explore hr{
+    color: #ffffdd;
+    width:70vw;
+}
+.e_about{
+    text-align: left;
+    overflow: scroll;
+    line-height:1.5 ;
+    /*to be changed*/
+    display:none;
+    opacity: 1;
+}
+.e_about h2{
+    position: relative;
+    left:7vw;
+}
+.e_about p{
+    left:7vw;
+    top:0;
+}
+.e_rules{
+    text-align: left;
+    /* overflow: visible; */
+    line-height:1.5 ;
+    /*to be changed*/
+    display:none;
+    opacity: 1;
+}
+.e_rules h2{
+    position: relative;
+    left: 7vw;
+}
+.e_rules p{
+    top:0vh;
+    left:0vw;
+}
+.e_rules ul{
+    position: relative;
+    left:5vw;
+    width:67vw;
+    height:100%;
+}
+.e_register{
+    text-align: left;
+    /*to be changed*/
+    /* display:none; */
+    opacity: 1;
+    position: relative;
+    right:7vw;
+}
+.e_register input[type="text"]{
+    background-color: inherit;
+    border-bottom: 2px solid #ffffff;
+}
+.e_register input[type="text"]:focus{
+    border-bottom: 3px solid #ffff00;
+}
+.e_register btn{
+    border: none;
+    position: relative;
+    left:36.5vw;
+    top:3vw;
+    cursor: pointer;
+}
+.e_register btn:hover, .e_register btn:active{
+    border: none;
+    color:#ffff00;
+    background-color: inherit;
 }
