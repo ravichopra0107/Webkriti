@@ -1,6 +1,7 @@
 var z=document.querySelectorAll(".e");
 var i=0,i1=0;
 var j=180,j1=180;
+
 for(var i=0;i<4;i++)
 {
   z[i].style.position='absolute';
@@ -66,20 +67,20 @@ function expand1()
 window.addEventListener("load",playvid);
 function playvid()
 {
-  for(var i=0;i<4;i++)
-  {
-    z[i].style.display='none';
-  }
    document.querySelector("video").style.display="inline-block";
-
    document.querySelector("video").play();                 
+   document.querySelectorAll(".orbit")[0].style.display='inline-block';
   setTimeout(()=>{
     document.querySelector("video").style.display="none";
-  for(var i=0;i<4;i++)
+    document.querySelectorAll(".orbit")[0].style.display='inline-block';
+    document.querySelectorAll(".orbit")[1].style.display='inline-block';
+    document.querySelectorAll(".orbit")[2].style.display='inline-block';
+    document.querySelectorAll(".orbit")[3].style.display='inline-block';
+    for(var i=0;i<4;i++)
   {
     z[i].style.display='inline-block';
   }
-  document.querySelector(".orbit").style.display='inline-block';
+ 
   p.style.display="inline-block";
   },10000);
 };
@@ -98,7 +99,7 @@ u=setInterval(expand2,60);
 });
 function expand2()
 {
-  if(cnt===90)
+  if(cnt>=1)
   {
   clearInterval(u);
   cnt=0;
@@ -113,7 +114,7 @@ document.querySelector(".forgot").addEventListener("click",()=>{
   u=setInterval(expand3,60);
   function expand3()
   {
-    if(cnt===90)
+    if(cnt>=1)
     {
     clearInterval(u);
     cnt=0;
@@ -135,7 +136,7 @@ document.querySelector(".first").addEventListener("click",()=>{
   u=setInterval(expand4,60); 
   function expand4()
   {
-    if(cnt===90)
+    if(cnt>=1)
     {
     clearInterval(u);
     cnt=0;
@@ -152,3 +153,108 @@ document.querySelector(".next1").addEventListener("click",()=>{
   document.querySelector(".first_time_register1").style.display="none";
   document.querySelector(".first_time_register2").style.display="block";
 })
+var event=document.querySelector(".Events");
+z[0].addEventListener("click",()=>{
+  for(var i=0;i<4;i++)
+{
+  z[i].style.display='none';
+}
+document.querySelectorAll(".orbit")[0].style.display="none";
+document.querySelectorAll(".orbit")[2].style.display="none";
+p.style.display="none";
+document.querySelector(".social_media").style.display="none";
+event.style.display="block";
+u=setInterval(expand5,60); 
+function expand5()
+{
+  if(cnt>=1)
+  {
+  clearInterval(u);
+  cnt=0;
+  }
+  else{
+    cnt+=.05;
+    document.querySelector(".Events").style.opacity=cnt;
+} 
+}
+});
+var exp=document.querySelectorAll(".exploreb");
+exp[1].addEventListener("click",()=>{
+  document.querySelector(".arrow1").style.display="none";
+  document.querySelector(".arrow2").style.display="none";
+  document.querySelector(".event2").style.display="none";
+  document.querySelector(".explore").style.display="block";
+});
+document.querySelector(".aboute").addEventListener("click",()=>{
+  document.querySelector(".e_rules").style.display="none";
+  document.querySelector(".e_register").style.display="none";
+  document.querySelector(".e_about").style.display="block";
+});
+document.querySelector(".rege").addEventListener("click",()=>{
+  document.querySelector(".e_rules").style.display="none";
+  document.querySelector(".e_register").style.display="block";
+  document.querySelector(".e_about").style.display="none";
+});
+
+document.querySelector(".rulese").addEventListener("click",()=>{
+  document.querySelector(".e_rules").style.display="block";
+  document.querySelector(".e_register").style.display="none";
+  document.querySelector(".e_about").style.display="none";
+});
+var arro=2;
+document.querySelector(".arrow1").addEventListener("click",()=>{
+  document.querySelector(".event"+arro).style.display="none";
+  if(arro>1)
+  {
+    arro--;
+  }
+  document.querySelector(".event"+arro).style.display="block";
+})
+document.querySelector(".arrow2").addEventListener("click",()=>{
+  document.querySelector(".event"+arro).style.display="none";
+  if(arro<3)
+  {
+    arro++;
+  }
+  document.querySelector(".event"+arro).style.display="block";
+})
+document.querySelector(".contim").addEventListener("click",()=>{
+  for(var i=0;i<4;i++)
+  {
+    z[i].style.display='inline-block';
+  }
+  document.querySelector(".orbit").style.display="inline-block";
+  p.style.display="inline-block";
+  document.querySelector(".social_media").style.display="inline-block";
+  cont.style.display="none";
+  cont.style.opacity=0;
+  cnt=0;
+});
+document.querySelector(".regim").addEventListener("click",()=>{
+  for(var i=0;i<4;i++)
+  {
+    z[i].style.display='inline-block';
+  }
+  document.querySelector(".orbit").style.display="inline-block";
+  
+p.style.display="inline-block";
+o.style.display="none";
+o.style.opacity=0;
+cnt=0;
+});
+document.querySelector(".evim").addEventListener("click",()=>{
+  for(var i=0;i<4;i++)
+  {
+    z[i].style.display='inline-block';
+  }
+  document.querySelectorAll(".orbit")[0].style.display="inline-block";
+  document.querySelectorAll(".orbit")[2].style.display="inline-block";
+  p.style.display="inline-block";
+  document.querySelector(".social_media").style.display="inline-block";
+  event.style.display="none";
+  event.style.opacity=0;
+  cnt=0;
+});
+document.querySelector(".proim").addEventListener("click",()=>{                              //for profile
+alert("hi");  
+});
