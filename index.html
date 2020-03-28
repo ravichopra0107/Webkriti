@@ -207,6 +207,7 @@
     <div class="profile">
         <!--script to go to homepage-->
         <btn class="proim" onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
+        <div class="profile_part">
         <h1>PROFILE</h1>
         <div class="image-upload">
             <label for="file-input">
@@ -224,6 +225,39 @@
         <p class="p1">City:</p>
         <p class="p2">Gwalior</p><br>
         <btn class="open_dashboard">DASHBOARD</btn>
+        </div>
+         <div class="dashboard_part">
+            <h1>REGISTERED EVENTS</h1>
+            <h2>Paid Events</h2>
+            <table>
+                <tr>
+                    <th>.#</th>
+                    <th>Event Name</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Programming Quiz</td>
+                </tr>
+            </table>
+            <h2>Unpaid Events (payment pending)</h2>
+            <table>
+                <tr>
+                    <th>.#</th>
+                    <th>Event Name</th>
+                    <th>Fee</th>
+                    <th>Leave</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Programming Quiz</td>
+                    <td>₹100</td>
+                    <td><btn onclick="" name="leave" class="leave">Leave</btn></td>
+                </tr>
+            </table>
+            <!--script to go to events-->
+            <btn onclick="" class="add_eve">Add Events</btn>
+            <btn onclick="" class="back">Go Back</btn>
+        </div>
     </div>
     <script src="action.js"></script>
 </body>
