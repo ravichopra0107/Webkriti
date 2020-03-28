@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +41,7 @@
     <video autoplay muted><source id="vid" src="videos/y2mate.com - Infotsav'16 Teaser_1s18k68dzgg_1080p (online-video-cutter.com).mp4" type="video/mp4"></video>
     <div class="register">
         <!--script to go to homepage-->
-        <btn onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
+        <btn class="regim" onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
             <div class="reg1">
         <form id="login" action="" method="POST">
             <h1>LOGIN</h1>
@@ -110,7 +111,7 @@
     </ul>
     <div id="contact">
         <!--script to go to homepage-->
-        <btn onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
+        <btn class="contim" onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
         <h2>CONTACT US:</h2>
         <ul>
             <li>RAVI CHOPRA <a href="mailto:shivamchopra1234567890@gmail.com"><img src="images/mail.png"></a><a href="tel:25288451"><img src="images/telephone.png"></a></li><br>
@@ -136,22 +137,22 @@
         </div>
     </div>
     <div class="Events">
-        <btn onclick="" style="cursor: pointer;" class="eve_logo"><img src="images/headers.png"></btn>
+        <btn class="evim" onclick="" style="cursor: pointer;" class="eve_logo"><img src="images/headers.png"></btn>
         <div class="event1">
         <h1>Robowars</h1>
-        <button onclick="">Explore</button>
+        <button class="exploreb" onclick="">Explore</button>
         <img src="images/robowar.jpg">
         </div>
         <btn onclick="" class="arrow1"><img src="images/arrow.png"></btn>
         <btn onclick="" class="arrow2"><img src="images/arrow (copy).png"></btn>
         <div class="event2">
         <h1>Programming<br>Quiz</h1>
-        <button onclick="">Explore</button>
+        <button class="exploreb"  onclick="">Explore</button>
         <img src="images/programmingQuiz.png">
         </div>
         <div class="event3">
         <h1>Hackathon</h1>
-        <button onclick="">Explore</button>
+        <button class="exploreb" onclick="">Explore</button>
         <img src="images/hack.png">
         </div>   
 
@@ -160,9 +161,9 @@
         <div class="explore">
             <div class="part1">
             <h2>PROGRAMMING QUIZ</h2>
-            <btn onclick="">About</btn>
-            <btn onclick="">Rules</btn>
-            <btn onclick="">Register</btn>
+            <btn class="aboute" >About</btn>
+            <btn class="rulese" >Rules</btn>
+            <btn class="rege" >Register</btn>
             </div>
             <div class="e_about">
                 <h2>Description</h2>
@@ -206,8 +207,7 @@
     </div>
     <div class="profile">
         <!--script to go to homepage-->
-        <btn onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
-        <div class="profile_part">
+        <btn class="proim" onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
         <h1>PROFILE</h1>
         <div class="image-upload">
             <label for="file-input">
@@ -225,39 +225,6 @@
         <p class="p1">City:</p>
         <p class="p2">Gwalior</p><br>
         <btn class="open_dashboard">DASHBOARD</btn>
-        </div>
-        <div class="dashboard_part">
-            <h1>REGISTERED EVENTS</h1>
-            <h2>Paid Events</h2>
-            <table>
-                <tr>
-                    <th>.#</th>
-                    <th>Event Name</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming Quiz</td>
-                </tr>
-            </table>
-            <h2>Unpaid Events (payment pending)</h2>
-            <table>
-                <tr>
-                    <th>.#</th>
-                    <th>Event Name</th>
-                    <th>Fee</th>
-                    <th>Leave</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Programming Quiz</td>
-                    <td>₹100</td>
-                    <td><btn onclick="" name="leave" class="leave">Leave</btn></td>
-                </tr>
-            </table>
-            <!--script to go to events-->
-            <btn onclick="" class="add_eve">Add Events</btn>
-            <btn onclick="" class="back">Go Back</btn>
-        </div>
     </div>
     <script src="action.js"></script>
 </body>
