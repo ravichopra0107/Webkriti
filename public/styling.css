@@ -290,7 +290,7 @@ img[src="images/headers.png"]{
     height:9vh;
     margin: 5px;
     outline: none;
-    display: inline-block;
+    /* display: none; */
     /*to be changed back to inline-block*/
 }
 .social_media a:active,a:hover{
@@ -470,7 +470,7 @@ input[name="register"]
 }
 .Events{
      /* to be changed */
-     display: none; 
+    display: none; 
     background:none;
     height: 100%;
     opacity: 0;
@@ -609,13 +609,19 @@ input[name="register"]
     color: #000000;
 }
 .part1{
-    display: inline-block;
+    /* display: none; */
     opacity: 1;
     /*to be changed*/
 }
+.eve_part{
+    /*to be changed*/
+    display:block;
+    opacity: 1;
+}
 .explore{
     /*to be changed*/
-    display:none;
+    /* display:none; */
+    display: none;
     opacity: 1;
     color: white;
     text-align: center;
@@ -651,7 +657,6 @@ input[name="register"]
 }
 .e_about{
     text-align: left;
-    overflow: scroll;
     line-height:1.5 ;
     /*to be changed*/
     display:none;
@@ -730,6 +735,16 @@ input[name="register"]
     background-size: cover;
     color: #ffffbb;
 }
+.profile_part{
+    /*to be changed*/
+    /* display: none; */
+    opacity: 1;
+}
+.dashboard_part{
+    /*to be changed*/
+    display: none;
+    opacity: 0;
+}
 .profile img[src="images/nucleus.png"]{
     height:17vh;
     width:8vw;
@@ -790,25 +805,59 @@ input[name="register"]
 .open_dashboard:hover, .open_dashboard:active{
     box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
 }
-.head{
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    font-family: sans-serif;
-    padding: 100px 0;
-    background-color: rgba(58, 144, 224, 0.377);
+.dashboard_part table{
+    font-family: 'Arvo', sans-serif;
+    font-weight: bold;
+    margin-top: 4vh;
+    margin-left: 15vw;
+    border-collapse: collapse;
 }
-.btn{
-    height: 40px;
-    width: 100px;
-    border: none;
-    border-radius: 2px;
+.dashboard_part h1{
+    left:23vw;
+}
+.dashboard_part h2{
+    font-size: x-large;
+    position: relative;
+    left:15vw;
+    top:2vh;
+}
+.dashboard_part table th{
+    font-size: large;
+    border-bottom: 2px solid white;
+}
+.dashboard_part table th, .dashboard_part table td{
+    padding:3vh 4vw;
+}
+.add_eve,.back{
     background-color: white;
-    color: rgb(6, 8, 8);
-    transition: 0.3s;
+    color: black;
+    padding: 1.5vh;
+    font-family: 'Arvo', sans-serif;
+    font-weight: bold;
+    border-radius: 5%;
+    cursor: pointer;
+    position: relative;
+    left:32vw;
+    top:3vh;
+    margin-left:3vw;
 }
-.btn:hover {
-    font-size: 1rem;
-    background-color: rgb(6, 8, 8);
-    color: white;
+.add_eve:hover, .add_eve:active, .back:hover, .back:active{
+    box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
+}
+.leave{
+    background-color: white;
+    color: black;
+    padding: 1vh 2.3vh;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.leave:hover, .leave:active{
+    box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
+}
+.Events img[src="images/headers.png"]{
+    position: absolute;
+    height: 15vh;
+    padding: 5px;
+    top: 2.8vh;
+    left: 1.8vw;
 }
