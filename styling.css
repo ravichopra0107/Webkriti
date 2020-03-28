@@ -609,13 +609,18 @@ input[name="register"]
     color: #000000;
 }
 .part1{
-    display: inline-block;
+    /* display: none; */
     opacity: 1;
     /*to be changed*/
 }
-.explore{
+.eve_part{
     /*to be changed*/
     display:none;
+    opacity: 1;
+}
+.explore{
+    /*to be changed*/
+    /* display:none; */
     opacity: 1;
     color: white;
     text-align: center;
@@ -651,7 +656,6 @@ input[name="register"]
 }
 .e_about{
     text-align: left;
-    overflow: scroll;
     line-height:1.5 ;
     /*to be changed*/
     display:none;
