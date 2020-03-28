@@ -730,6 +730,16 @@ input[name="register"]
     background-size: cover;
     color: #ffffbb;
 }
+.profile_part{
+    /*to be changed*/
+    /* display: none; */
+    opacity: 1;
+}
+.dashboard_part{
+    /*to be changed*/
+    display: none;
+    opacity: 0;
+}
 .profile img[src="images/nucleus.png"]{
     height:17vh;
     width:8vw;
