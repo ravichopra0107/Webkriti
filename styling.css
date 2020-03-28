@@ -12,7 +12,7 @@ body{
     border-radius: 50%;
     background-color: transparent;
     text-align: center;
-    display: none;
+    display: inline-block;
     position: absolute;
     opacity: 1;
     /*to be changed*/
@@ -23,7 +23,7 @@ body{
     border: 1px solid black;
     height: 18vh;
     width: 9.625vw;
-    display: none;
+    display: inline-block;
     position: relative;
     text-align: center;
     opacity: 1;
@@ -306,7 +306,7 @@ img[src="images/headers.png"]{
         height: 90vh;
         width: 90vw;
         /*to be changed*/
-        opacity: 0;
+        opacity: 1;
         z-index:19;
         background-image: url("images/register.jpg");
         background-repeat: no-repeat;
@@ -360,7 +360,7 @@ video{
     left:22.5vw;
     z-index:16;
     opacity:1;/*to be changed*/
-    display: none ;
+    display: none;
 }
 #login,#nyr,.first,.forgot{
     /*to be changed*/
@@ -469,11 +469,10 @@ input[name="register"]
     cursor: pointer;
 }
 .Events{
-     /* to be changed */
-     display: none; 
+    /*to be changed*/
+    display: none;
     background:none;
     height: 100%;
-    opacity: 0;
 }
 .event1,.event2,.event3{
     border:3px solid #ff00c8;
@@ -487,8 +486,6 @@ input[name="register"]
 .event1{
     opacity:1;
     /*to be changed*/
-    /* position: absolute;
-    top: 0; */
     z-index:19;
     display: none;
     /* to be changed */
@@ -499,19 +496,19 @@ input[name="register"]
     /*to be changed*/
     position: absolute;
     top: 0;
-     left:10vw;
+    left:10vw;
     z-index:19;
-    display: inline-block;
+    display: none;
     /* to be changed */
     /*z-index which are not visible is 19*/
 }
 .event3{
     opacity:1;
     /*to be changed*/
-    /* position: absolute;
-    top: 0; */
-    /* left:10vw; */
-    z-index:19;
+    position: absolute;
+    top: 0;
+    left:10vw;
+    z-index:20;
     /*z-index which are not visible is 19*/
     display: none;
     /*to be changed*/
@@ -556,7 +553,7 @@ input[name="register"]
     margin-left: 8vw;
     margin-top: 15vh;
     /*to be changed*/
-    z-index:19;
+    z-index:20;
     /*z-index which are not visible is 19*/
 }
 .event1 h1::first-letter, .event2 h1::first-letter,  .event3 h1::first-letter{
@@ -573,7 +570,7 @@ input[name="register"]
     cursor: pointer;
     outline: none;
     /*to be changed*/
-    z-index:19;
+    z-index:20;
     /*z-index which are not visible is 19*/
 }
 .event1 img, .event2 img,  .event3 img{
@@ -609,13 +606,13 @@ input[name="register"]
     color: #000000;
 }
 .part1{
-    display: inline-block;
-    opacity: 1;
+    display: none;
+    opacity: 0;
     /*to be changed*/
 }
 .explore{
     /*to be changed*/
-    display:none;
+    display: none;
     opacity: 1;
     color: white;
     text-align: center;
@@ -670,7 +667,7 @@ input[name="register"]
     /* overflow: visible; */
     line-height:1.5 ;
     /*to be changed*/
-    display:inline-block;
+    display:none;
     opacity: 1;
 }
 .e_rules h2{
@@ -729,6 +726,18 @@ input[name="register"]
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffbb;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.profile_part{
+    /*to be changed*/
+    /* display: none; */
+    opacity: 1;
+}
+.dashboard_part{
+    /*to be changed*/
+    display: none;
+    opacity: 0;
 }
 .profile img[src="images/nucleus.png"]{
     height:17vh;
@@ -788,5 +797,54 @@ input[name="register"]
     top:3vh;
 }
 .open_dashboard:hover, .open_dashboard:active{
+    box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
+}
+.dashboard_part table{
+    font-family: 'Arvo', sans-serif;
+    font-weight: bold;
+    margin-top: 4vh;
+    margin-left: 15vw;
+    border-collapse: collapse;
+}
+.dashboard_part h1{
+    left:23vw;
+}
+.dashboard_part h2{
+    font-size: x-large;
+    position: relative;
+    left:15vw;
+    top:2vh;
+}
+.dashboard_part table th{
+    font-size: large;
+    border-bottom: 2px solid white;
+}
+.dashboard_part table th, .dashboard_part table td{
+    padding:3vh 4vw;
+}
+.add_eve,.back{
+    background-color: white;
+    color: black;
+    padding: 1.5vh;
+    font-family: 'Arvo', sans-serif;
+    font-weight: bold;
+    border-radius: 5%;
+    cursor: pointer;
+    position: relative;
+    left:32vw;
+    top:3vh;
+    margin-left:3vw;
+}
+.add_eve:hover, .add_eve:active, .back:hover, .back:active{
+    box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
+}
+.leave{
+    background-color: white;
+    color: black;
+    padding: 1vh 2.3vh;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.leave:hover, .leave:active{
     box-shadow: 0px 0px 5px 5px rgba(23, 159, 201, 0.712);
 }
