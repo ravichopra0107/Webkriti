@@ -154,6 +154,7 @@ document.querySelector(".next1").addEventListener("click",()=>{
   document.querySelector(".first_time_register2").style.display="block";
 })
 var event=document.querySelector(".Events");
+var exp=document.querySelectorAll(".explore");
 z[0].addEventListener("click",()=>{
   for(var i=0;i<4;i++)
 {
@@ -164,6 +165,7 @@ document.querySelectorAll(".orbit")[2].style.display="none";
 p.style.display="none";
 document.querySelector(".social_media").style.display="none";
 event.style.display="block";
+exp[0].style.display="block";
 u=setInterval(expand5,60); 
 function expand5()
 {
@@ -178,12 +180,12 @@ function expand5()
 } 
 }
 });
-var exp=document.querySelectorAll(".exploreb");
-exp[1].addEventListener("click",()=>{
+exp[0].addEventListener("click",()=>{
+
   document.querySelector(".arrow1").style.display="none";
   document.querySelector(".arrow2").style.display="none";
-  document.querySelector(".event2").style.display="none";
-  document.querySelector(".explore").style.display="block";
+  document.querySelector(".eve_part").style.display="none";
+  exp[1].style.display="block";
 });
 document.querySelector(".aboute").addEventListener("click",()=>{
   document.querySelector(".e_rules").style.display="none";
