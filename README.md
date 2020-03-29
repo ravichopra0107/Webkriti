@@ -14,6 +14,6 @@ Event registeration is separate and a person can register by just entering the I
 ## Screenshots
 https://drive.google.com/file/d/1vGfTsD0_uO3bCeaMm6K06IkoajHnMPfk/view?usp=sharing - automatic!
 ## Video
-https://drive.google.com/open?id=1-DV11XN1ECy8JogZ9cZ_E2yjlJcvzgrS - automatic!
+https://youtu.be/7TkhfIjehW4
 ## Hosted Website Link
 https://ancient-sands-23667.herokuapp.com - automatic!
