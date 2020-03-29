@@ -8,3 +8,8 @@ This project has been created under the __Webkriti__ contest of AASF. It is a te
 4. __Separate Event Registeration__:Event registeration is separate and a person can register by just entering the Infotsav Id.
 5. __Forgot Password__
 ## Screenshots
+
+## Video
+
+## Hosted Website Link
+https://ancient-sands-23667.herokuapp.com
